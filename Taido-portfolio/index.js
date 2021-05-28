@@ -17,13 +17,13 @@ function showSide(){
 function iconSwitch(){
     var btn = document.getElementById('ConBtn');
     var arr = document.getElementById('arrow');
-    if(btn.onmouseover == true){
+    var forw = document.getElementById('forward');
+    
         arr.style.transition = "opacity 0.3s ease-in-out";
+        forw.style.transition = "opacity 0.3s ease-in-out";
         arr.style.opacity = "0";
-    }
-    else{
-        arr.style.transition = "opacity 0.3s ease-in-out";
-        arr.style.opacity = "1";
-    }
+        forw.style.opacity = "1"
+        forw.style.fontSize = "20px";
+    
     
 }

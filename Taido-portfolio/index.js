@@ -13,3 +13,17 @@ function showSide(){
     element.style.opacity = "1";
     element.style.top = "0%";
 }
+
+function iconSwitch(){
+    var btn = document.getElementById('ConBtn');
+    var arr = document.getElementById('arrow');
+    if(btn.onmouseover == true){
+        arr.style.transition = "opacity 0.3s ease-in-out";
+        arr.style.opacity = "0";
+    }
+    else{
+        arr.style.transition = "opacity 0.3s ease-in-out";
+        arr.style.opacity = "1";
+    }
+    
+}

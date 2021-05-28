@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Disket-Mono-Bold';
+  src: url('Disket-Mono-Bold.eot');
+  src: url('Disket-Mono-Bold.eot?#iefix') format('embedded-opentype'),
+       url('Disket-Mono-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DisketMono-Bold';
+  src: url('DisketMono-Bold.svg#DisketMono-Bold') format('svg'),
+       url('DisketMono-Bold.ttf') format('truetype'),
+       url('DisketMono-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+

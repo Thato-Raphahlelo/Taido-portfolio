@@ -1,0 +1,439 @@
+﻿body {
+}
+
+#logo {
+  position: absolute;
+  z-index: 3;
+  width: 18%;
+}
+
+#background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+@font-face {
+  font-family: "Disket-Mono-Bold";
+  src: url("Disket-Mono-Bold.eot");
+  src: url("Disket-Mono-Bold.eot?#iefix") format("embedded-opentype"),
+    url("Disket-Mono-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DisketMono-Bold";
+  src: url("DisketMono-Bold.svg#DisketMono-Bold") format("svg"),
+    url("DisketMono-Bold.ttf") format("truetype"),
+    url("DisketMono-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Disket-Mono-Regular";
+  src: url("Disket-Mono-Regular.eot");
+  src: url("Disket-Mono-Regular.eot?#iefix") format("embedded-opentype"),
+    url("Disket-Mono-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DisketMono";
+  src: url("DisketMono.svg#DisketMono") format("svg"),
+    url("DisketMono.ttf") format("truetype"),
+    url("DisketMono.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#Tai {
+  font-family: Disket-Mono-Bold;
+  font-weight: normal;
+  font-style: normal;
+  width: 18%;
+  position: absolute;
+  z-index: 3;
+  color: #fff;
+  padding-top: 0.2rem;
+  padding-left: 0.2rem;
+}
+a {
+  font-family: Disket-Mono-Regular;
+}
+
+#descrip {
+  margin: auto;
+  width: 75%;
+  padding: 8.5rem 0;
+  text-align: center;
+  color: #fff;
+  font-family: Disket-Mono-Bold;
+}
+
+.Nav {
+  background: #000;
+  height: 80px;
+  margin-top: -80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.NavbarContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  padding: 0 24px;
+  max-width: 1100px;
+}
+
+.NavLogo {
+  color: #fff;
+  justify-self: flex-start;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.MobileIcon {
+  display: none;
+
+  /* @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+  } */
+}
+
+.NavMenu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 0;
+  margin-right: -22px;
+}
+
+.NavItem {
+  position: relative;
+  height: 20px;
+}
+
+.NavLinks {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.NavLinks:active {
+  border-bottom: 3px solid #01bf71;
+}
+
+.NavBtn {
+  display: flex;
+  align-items: center;
+
+  /* @media screen and (max-width: 768px) {
+    display: none;
+  } */
+}
+
+.NavBtnLink {
+  border-radius: 50px;
+  background: #01bf71;
+  white-space: nowrap;
+  padding: 10px 22px;
+  color: #010606;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.NavBtnLink:hover {
+  transition: all 0.2s ease-in-out;
+  background: #fff;
+  color: #010606;
+}
+
+@media screen and (max-width: 768px) {
+  .NavMenu,
+  .NavBtn {
+    display: none;
+  }
+  .MobileIcon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .HeroH1 {
+    font-size: 40px;
+  }
+
+  .HeroP {
+    font-size: 24px;
+  }
+  .Button {
+    background: #010606;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+
+  .Button:hover {
+    background: #01bf71;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .Nav {
+    transition: 0.8s all ease;
+  }
+}
+
+.SidebarContainer {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: #0d0d0d;
+  display: grid;
+  align-items: center;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+  top: -100%;
+}
+
+.CloseIcon {
+  color: #fff;
+}
+
+.Icon {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  background: transparent;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.SidebarWrapper {
+  color: #fff;
+}
+
+.SidebarLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  list-style: none;
+  transition: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.SidebarLink:hover {
+  color: #01bf71;
+  transition: 0.2s ease-in-out;
+}
+
+.SideBtnWrap {
+  display: flex;
+  justify-content: center;
+}
+
+.SidebarRoute {
+  border-radius: 50px;
+  background: #01bf71;
+  white-space: nowrap;
+  padding: 16px 64px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: #010606;
+}
+
+.SidebarRoute:hover {
+  transition: all 0.2s ease-in-out;
+  background: #fff;
+  color: #01bf71;
+}
+
+.SidebarMenu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 80px);
+  text-align: center;
+  padding: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .SidebarMenu {
+    grid-template-rows: repeat(6, 60px);
+  }
+
+  .HeroH1 {
+    font-size: 32px;
+  }
+
+  .HeroP {
+    font-size: 18px;
+  }
+
+  .Button {
+    background: #010606;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+
+  .Button:hover {
+    background: #01bf71;
+  }
+}
+
+.HeroContainer {
+  background: #0c0c0c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  height: 800px;
+  position: relative;
+  z-index: 1;
+
+  /*add before styles*/
+}
+
+.HeroContainer:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  z-index: 2;
+}
+
+.HeroBg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.VideoBg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background: #232a34;
+}
+
+.HeroContent {
+  z-index: 3;
+  max-width: 1200px;
+  position: absolute;
+  padding: 8px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.HeroH1 {
+  color: #fff;
+  font-size: 48px;
+  text-align: center;
+}
+
+.HeroP {
+  margin-top: 24px;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  max-width: 600px;
+}
+
+.HeroBtnWrapper {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ArrowForward {
+  margin-left: 8px;
+  font-size: 20px;
+}
+
+.ArrowRight {
+  margin-left: 8px;
+  font-size: 20px;
+}
+
+.Button {
+  border-radius: 50px;
+  background: #01bf71;
+  white-space: nowrap;
+  padding: 14px 48px;
+  color: #010606;
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.Button:hover {
+  transition: all 0.2s ease-in-out;
+  background: #fff;
+}

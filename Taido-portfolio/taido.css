@@ -1,4 +1,7 @@
-﻿#logo {
+﻿html {
+  scroll-behavior: smooth;
+}
+#logo {
   position: absolute;
   z-index: 3;
   width: 18%;

@@ -32,6 +32,10 @@ function scrollToAbout(){
   window.scrollTo(0, 748);
 }
 
+function scrollToTop(){
+  window.scrollToTop();
+}
+
 /* $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {

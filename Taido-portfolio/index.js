@@ -28,7 +28,11 @@ function iconSwitch(){
     
 }
 
-$(document).ready(function(){
+function scrollToAbout(){
+  window.scrollTo(0, 748);
+}
+
+/* $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
@@ -50,5 +54,15 @@ $(document).ready(function(){
         window.location.hash = hash;
       });
     } // End if
-  });
+  }); 
 });
+
+$(document).ready(function(){
+  $("abtLink").on('Click', function(event){
+    if(this.hash !== ""){
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body'.animate({scrollTo()}));
+    }
+  });
+}); */

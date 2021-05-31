@@ -29,11 +29,15 @@ function iconSwitch(){
 }
 
 function scrollToAbout(){
-  window.scrollTo(0, 748);
+  window.scrollTo(0, 800);
 }
 
 function scrollToTop(){
   window.scrollToTop();
+}
+
+function scrollToPort(){
+  window.scrollTo(0, 1660);
 }
 
 /* $(document).ready(function(){

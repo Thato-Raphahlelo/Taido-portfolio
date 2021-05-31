@@ -201,7 +201,8 @@ a {
     font-size: 40px;
   }
 
-  .HeroP {
+  .HeroP,
+  .Heading {
     font-size: 24px;
   }
   .Button {
@@ -324,9 +325,12 @@ a {
     grid-template-rows: repeat(6, 60px);
   }
 
-  .HeroH1,
-  .Heading {
+  .HeroH1 {
     font-size: 32px;
+  }
+
+  .Heading {
+    font-size: 18px;
   }
 
   .HeroP {
@@ -531,4 +535,25 @@ a {
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
+}
+
+.InfoContainer2 {
+  color: #000;
+  background: #0c0c0c;
+}
+
+.Heading2 {
+  margin-bottom: 24px;
+  font-size: 48px;
+  line-height: 1.1px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.Subtitle2 {
+  max-width: 440px;
+  margin-bottom: 35px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
 }

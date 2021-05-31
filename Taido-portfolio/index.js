@@ -40,6 +40,30 @@ function scrollToPort(){
   window.scrollTo(0, 1660);
 }
 
+window.onscroll = function(){activeLink()};
+
+function activeLink(){
+  var home = document.getElementById('home');
+  var abt = document.getElementById('abtLink');
+  var portf = document.getElementById('portLink');
+
+  if(document.body.scrollTop > 800 || document.documentElement > 800){
+    abt.classList.add("active");
+    home.classList.remove("active");
+    portf.classList.remove("active");
+  }
+  else if(document.body.scrollTop > 1660 || document.documentElement > 1660){
+    abt.classList.remove("active");
+    home.classList.remove("active");
+    portf.classList.add("active");
+  }
+  else{
+    abt.classList.remove("active");
+    home.classList.add("active");
+    portf.classList.remove("active");
+  }
+}
+
 /* $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {

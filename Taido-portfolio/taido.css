@@ -148,6 +148,7 @@ a {
   cursor: pointer;
 }
 
+.active,
 .NavLinks:active {
   border-bottom: 3px solid #01bf71;
 }

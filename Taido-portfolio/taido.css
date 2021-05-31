@@ -349,6 +349,23 @@ a {
   .Button:hover {
     background: #01bf71;
   }
+
+  .Formwrap {
+    height: 80%;
+  }
+
+  .icon {
+    margin-left: 16px;
+    margin-top: 8px;
+  }
+
+  .Content {
+    padding: 10px;
+  }
+
+  .Contacts {
+    padding: 32px 32px;
+  }
 }
 
 .HeroContainer {
@@ -559,4 +576,56 @@ a {
   font-size: 18px;
   line-height: 24px;
   color: #fff;
+}
+
+.Container {
+  min-height: 692px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    rgba(1, 147, 86, 1) 0%,
+    rgba(10, 201, 122, 1) 100%
+  );
+}
+
+.Formwrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.icon {
+  margin-left: 32px;
+  margin-top: 32px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.Content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Contacts {
+  background: #010101;
+  max-width: 400px;
+  height: auto;
+  width: 100%;
+  z-index: 1;
+  display: grid;
+  margin: 0 auto;
+  padding: 80px 32px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 }

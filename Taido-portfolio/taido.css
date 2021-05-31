@@ -75,7 +75,6 @@ a {
 }
 
 .Nav {
-  background: #000;
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -85,6 +84,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 10;
+  background: transparent;
 }
 
 .NavbarContainer {

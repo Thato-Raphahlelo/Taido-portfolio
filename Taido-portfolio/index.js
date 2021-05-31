@@ -29,7 +29,7 @@ function iconSwitch(){
 }
 
 function scrollToAbout(){
-  window.scrollTo(0, 800);
+  window.scrollTo(0, 720);
 }
 
 function scrollToTop(){
@@ -37,7 +37,7 @@ function scrollToTop(){
 }
 
 function scrollToPort(){
-  window.scrollTo(0, 1660);
+  window.scrollTo(0, 1580);
 }
 
 window.onscroll = function(){activeLink()};
@@ -46,13 +46,21 @@ function activeLink(){
   var home = document.getElementById('home');
   var abt = document.getElementById('abtLink');
   var portf = document.getElementById('portLink');
+  var nav = document.getElementById("nav");
 
-  if(document.body.scrollTop > 800 || document.documentElement.scrollTop > 800){
+  if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
+    nav.style.background = "#000";
+  }
+  else{
+    nav.style.background = "transparent";
+  }
+
+  if(document.body.scrollTop > 720 || document.documentElement.scrollTop > 720){
     abt.classList.add("active");
     home.classList.remove("active");
     portf.classList.remove("active");
   }
-  else if(document.body.scrollTop > 1660 || document.documentElement.scrollTop > 1660){
+  else if(document.body.scrollTop > 1580 || document.documentElement.scrollTop > 1580){
     abt.classList.remove("active");
     home.classList.remove("active");
     portf.classList.add("active");

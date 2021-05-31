@@ -146,6 +146,7 @@ a {
   text-decoration: none;
   padding: 0 1rem;
   cursor: pointer;
+  padding-bottom: 23px;
 }
 
 .active,

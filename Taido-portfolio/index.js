@@ -47,12 +47,12 @@ function activeLink(){
   var abt = document.getElementById('abtLink');
   var portf = document.getElementById('portLink');
 
-  if(document.body.scrollTop > 800 || document.documentElement > 800){
+  if(document.body.scrollTop > 800 || document.documentElement.scrollTop > 800){
     abt.classList.add("active");
     home.classList.remove("active");
     portf.classList.remove("active");
   }
-  else if(document.body.scrollTop > 1660 || document.documentElement > 1660){
+  else if(document.body.scrollTop > 1660 || document.documentElement.scrollTop > 1660){
     abt.classList.remove("active");
     home.classList.remove("active");
     portf.classList.add("active");

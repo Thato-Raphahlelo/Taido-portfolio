@@ -452,6 +452,7 @@ a {
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
+  border-style: none;
 }
 
 .Button:hover {
@@ -507,7 +508,7 @@ a {
 
 .Heading {
   margin-bottom: 24px;
-  font-size: 48px;
+  font-size: 3.6vw;
   line-height: 1.1px;
   font-weight: 600;
   color: #010606;
@@ -544,7 +545,7 @@ a {
 
 .Heading2 {
   margin-bottom: 24px;
-  font-size: 48px;
+  font-size: 3.6vw;
   line-height: 1.1px;
   font-weight: 600;
   color: #fff;

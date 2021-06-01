@@ -14,6 +14,16 @@ function showSide(){
     element.style.top = "0%";
 }
 
+function sideAbt(){
+  hideSide();
+  scrollToAbout();
+}
+
+function portAbt(){
+  hideSide();
+  scrollToPort();
+}
+
 function iconSwitch(){
     var btn = document.getElementById('ConBtn');
     var arr = document.getElementById('arrow');
@@ -34,9 +44,8 @@ function scrollToAbout(){
 
 function scrollToTop(){
   if(document.body.scrollTop != 0 || document.documentElement.scrollTop != 0){
-    window.scrollToTop();
+    window.scrollTo(0,0);
   }
-  
 }
 
 function scrollToPort(){
@@ -90,7 +99,6 @@ function openTwitter(){
 function callPhone(){
   window.open("tel:0614318748");
 }
-
 
 
 /* $(document).ready(function(){

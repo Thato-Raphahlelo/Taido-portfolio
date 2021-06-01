@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./open-iconic-master/font/css/open-iconic-bootstrap.min.css"/>
     <link rel="stylesheet" href="./Fonts/Disket Rostype/Bold/onlinefontconverter.com/converted-files/font.css"/>
     <link rel="stylesheet" href="./Fonts/Disket Rostype/Regular web/onlinefontconverter.com/converted-files/font.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -24,14 +25,33 @@
             <a class="icon"></a>
             <div class="Content">
                 <div class="Contacts">
-                    <div class="Column1">
-                        <h1>Email</h1>
-                        <h1>Phone</h1>
-                        <h1>Socials</h1>
-                    </div>
-                    <div class="Column2">
-                        <p>thatomraphahlelo</p>
-                    </div>
+                    <ul class="ContactGrid">
+                        <div class="grid-item i1">
+                            <h1 class="Heading3">Email</h1>
+                        </div>
+                        <div class="grid-item i2">
+                            <a href="mailto:thatomraphahlelo@gmail.com" class="ContactSub">thatomraphahlelo@gmail.com</a>
+                        </div>   
+                        <div class="grid-item i3">
+                            <h1 class="Heading3">Phone</h1>
+                        </div>
+                        <div class="grid-item i4">
+                            <a onclick="callPhone()" class="ContactSub">+2761 431 8748</a>
+                        </div>
+                        <div class="grid-item i5">
+                            <h1 class="Heading3">Socials</h1>
+                        </div>
+                        <div class="SocialContainer grid-item i6" >
+                                <a onclick="openLinkedIn()" class="socials fa fa-linkedin"></a>
+                                <a onclick="openTwitter()" class="socials fa fa-twitter"></a>
+                                <a onclick="openIg()" class="socials fa fa-instagram"></a>
+                        </div>
+                        
+                    </ul>  
+                    <div class="SideBtnWrap">
+                        
+                        <a class="SidebarRoute" download="Thato motlatso raphahlelo cv" href="./CVfile/Thato motlatso raphahlelo cv.pdf"><span class="oi oi-data-transfer-download"></span> Download CV</a>
+                    </div>  
                 </div>
             </div>
         </div>

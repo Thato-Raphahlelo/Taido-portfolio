@@ -33,7 +33,10 @@ function scrollToAbout(){
 }
 
 function scrollToTop(){
-  window.scrollToTop();
+  if(document.body.scrollTop != 0 || document.documentElement.scrollTop != 0){
+    window.scrollToTop();
+  }
+  
 }
 
 function scrollToPort(){
@@ -71,6 +74,24 @@ function activeLink(){
     portf.classList.remove("active");
   }
 }
+
+function openLinkedIn(){
+  window.open("https://www.linkedin.com/in/thato-motlatso-raphahlelo-558767207");
+}
+
+function openIg(){
+  window.open("https://www.instagram.com/bigbagtaido/");
+}
+
+function openTwitter(){
+  window.open("https://twitter.com/IssTooMuch");
+}
+
+function callPhone(){
+  window.open("tel:0614318748");
+}
+
+
 
 /* $(document).ready(function(){
   // Add smooth scrolling to all links

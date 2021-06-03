@@ -227,6 +227,10 @@ a {
   .InfoContainer {
     padding: 100px 0;
   }
+
+  .InfoRow {
+    grid-template-areas: "col1" "col2";
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -243,6 +247,10 @@ a {
 
   .Button:hover {
     background: #01bf71;
+  }
+
+  .InfoRow {
+    grid-template-areas: "col1" "col2";
   }
 }
 
@@ -371,6 +379,9 @@ a {
 
   .Contacts {
     padding: 32px 32px;
+  }
+  .InfoRow {
+    grid-template-areas: "col1" "col2";
   }
 }
 
@@ -506,13 +517,19 @@ a {
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
-  grid-template-areas: "col1" "col2";
+  grid-template-areas: "col1 col2";
 }
 
 .Column1 {
   margin-bottom: 15px;
   padding: 0 15px;
-  grid-area: "col1";
+  grid-area: col1;
+}
+
+.Column2 {
+  margin-bottom: 15px;
+  padding: 0 15px;
+  grid-area: col2;
 }
 
 .TextWrapper {

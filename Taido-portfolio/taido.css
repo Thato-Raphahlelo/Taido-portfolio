@@ -1,6 +1,12 @@
 ﻿html {
   scroll-behavior: smooth;
 }
+
+p,
+h1 {
+  font-family: Century Gothic;
+}
+
 #logo {
   position: absolute;
   z-index: 3;
@@ -619,7 +625,7 @@ a {
 
 .Contacts {
   background: #010101;
-  max-width: 400px;
+  max-width: 600px;
   height: auto;
   width: 100%;
   z-index: 1;
